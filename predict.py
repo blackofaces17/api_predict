@@ -29,8 +29,7 @@ def predictions():
     start1=1
     end1=len(df_energy)
     predictions=model_arima_fit.predict(start=start1,end=end1,typ="levels")
-    
-
+    y = json.loads(json.dumps(predictions.T.to_dict()))
 
     
     return y 
