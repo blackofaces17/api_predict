@@ -1,5 +1,4 @@
 import pandas as pd
-from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 from statsmodels.tsa.arima_model import ARIMA
 import warnings
 import json
@@ -33,5 +32,5 @@ def predictions():
     
 
 
-    y = json.loads(json.dumps(predictions.T.to_dict()))
+    
     return y 
