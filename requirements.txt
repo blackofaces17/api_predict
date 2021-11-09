@@ -1,6 +1,6 @@
 fastapi
 uvicorn
 pandas
-statsmodels
+statsmodels==0.12.2
 
 
